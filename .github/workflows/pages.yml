@@ -8,7 +8,7 @@ name: Pages
 on:
   push:
     branches:
-      - master # 仅在 master 分支有 push 时触发此工作流
+      - main # 仅在 main 分支有 push 时触发此工作流
 
 # 定义工作流中的所有任务
 jobs:
@@ -16,7 +16,7 @@ jobs:
   build:
     # 指定运行环境为最新的 Ubuntu 系统
     runs-on: ubuntu-latest
-    
+
     # 定义此任务中的所有步骤
     steps:
       # 步骤 1: 检出代码仓库
@@ -27,7 +27,7 @@ jobs:
           # 递归检出所有子模块（如果项目包含 git submodule）
           # 参考: https://github.com/actions/checkout
           submodules: recursive
-      
+
       # 步骤 2: 设置 Node.js 运行环境
       - name: Use Node.js 24.13.0
         uses: actions/setup-node@v4
@@ -80,24 +80,24 @@ jobs:
   deploy:
     # 此任务依赖于 build 任务，只有 build 任务成功完成后才会执行
     needs: build
-    
+
     # 定义此任务所需的权限
     permissions:
       # 允许写入 GitHub Pages 配置
       pages: write
       # 允许生成和使用 OIDC token（用于身份验证）
       id-token: write
-    
+
     # 定义部署环境信息
     environment:
       # 环境名称为 github-pages（GitHub 会自动识别并配置）
       name: github-pages
       # 部署完成后的访问 URL，从部署步骤的输出中获取
       url: ${{ steps.deployment.outputs.page_url }}
-    
+
     # 指定运行环境为最新的 Ubuntu 系统
     runs-on: ubuntu-latest
-    
+
     # 定义此任务中的所有步骤
     steps:
       # 步骤 1: 部署到 GitHub Pages
