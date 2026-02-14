@@ -1,0 +1,108 @@
+# GitHub Pages 自动化部署工作流
+# 该工作流在 master 分支有新的 push 时自动触发，构建项目并部署到 GitHub Pages
+
+# 工作流名称，会在 GitHub Actions 界面显示
+name: Pages
+
+# 工作流触发条件
+on:
+  push:
+    branches:
+      - master # 仅在 master 分支有 push 时触发此工作流
+
+# 定义工作流中的所有任务
+jobs:
+  # 构建任务：编译项目并生成静态文件
+  build:
+    # 指定运行环境为最新的 Ubuntu 系统
+    runs-on: ubuntu-latest
+    
+    # 定义此任务中的所有步骤
+    steps:
+      # 步骤 1: 检出代码仓库
+      - uses: actions/checkout@v4
+        with:
+          # 使用 GitHub 提供的默认 token 进行身份验证
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # 递归检出所有子模块（如果项目包含 git submodule）
+          # 参考: https://github.com/actions/checkout
+          submodules: recursive
+      
+      # 步骤 2: 设置 Node.js 运行环境
+      - name: Use Node.js 24.13.0
+        uses: actions/setup-node@v4
+        with:
+          # 指定 Node.js 版本为 24.13.0
+          # 支持的版本格式: 20, 18.19, >=16.20.2, lts/Iron, lts/Hydrogen, *, latest, current, node
+          # 详细说明: https://github.com/actions/setup-node#supported-version-syntax
+          node-version: '24.13.0'
+
+      # 步骤 3: 设置 pnpm 包管理器
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          # 指定 pnpm 版本为 10.29.3
+          version: 10.29.3
+
+      # 步骤 4: 获取 pnpm 存储目录路径
+      - name: Get pnpm store directory
+        # 执行命令获取 pnpm 的本地存储路径，并将其保存到环境变量 STORE_PATH 中
+        run: echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_ENV
+
+      # 步骤 5: 缓存 pnpm 依赖包
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          # 缓存的目录路径（pnpm 的包存储位置）
+          path: ${{ env.STORE_PATH }}
+          # 缓存的唯一标识符，基于操作系统和 pnpm-lock.yaml 文件的哈希值
+          # 这样可以在依赖未变化时复用缓存，加快构建速度
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
+
+      # 步骤 6: 安装项目依赖
+      - name: Install Dependencies
+        # 使用 pnpm 安装 package.json 中定义的所有依赖包
+        run: pnpm install
+
+      # 步骤 7: 构建项目
+      - name: Build
+        # 执行 package.json 中定义的 build 脚本，生成静态文件到 public 目录
+        run: pnpm run build
+
+      # 步骤 8: 上传构建产物到 GitHub Pages
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 指定要上传的目录路径（构建后的静态文件所在目录）
+          path: ./public
+
+  # 部署任务：将构建好的文件部署到 GitHub Pages
+  deploy:
+    # 此任务依赖于 build 任务，只有 build 任务成功完成后才会执行
+    needs: build
+    
+    # 定义此任务所需的权限
+    permissions:
+      # 允许写入 GitHub Pages 配置
+      pages: write
+      # 允许生成和使用 OIDC token（用于身份验证）
+      id-token: write
+    
+    # 定义部署环境信息
+    environment:
+      # 环境名称为 github-pages（GitHub 会自动识别并配置）
+      name: github-pages
+      # 部署完成后的访问 URL，从部署步骤的输出中获取
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    # 指定运行环境为最新的 Ubuntu 系统
+    runs-on: ubuntu-latest
+    
+    # 定义此任务中的所有步骤
+    steps:
+      # 步骤 1: 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        # 为此步骤设置 ID，以便后续步骤可以引用其输出
+        id: deployment
+        # 使用 GitHub 官方的部署 action，将之前上传的产物部署到 GitHub Pages
+        uses: actions/deploy-pages@v4

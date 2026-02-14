@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: 长风
+subtitle: '长风破浪会有时，直挂云帆济沧海'
+description: '前端开发、AI技术、Web开发、JavaScript、Vue、React、机器学习、深度学习'
+keywords: 前端,AI,Web开发,JavaScript,Vue,React,TypeScript,CSS,HTML,机器学习,深度学习,神经网络,自然语言处理,计算机视觉,开发技术,编程
+author: changfengTech
+language: zh
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://changfengTech.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: anzhiyu
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
