@@ -161,8 +161,9 @@ cover:
   position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
-    # - /img/default_cover.jpg
-
+    - https://cdn.pichub.app/img/images/46/06/4606dd8de98f693ae93881bb74985597540271f3.webp
+    - https://cdn.pichub.app/img/images/71/32/71326b61cade3d2664853b5c8eb47c8b358e2015.webp
+    - https://cdn.pichub.app/img/images/a1/fe/a1fe9d880406551a6c1ffa42d9029ef63900669d.webp
 # Replace Broken Images (替换无法显示的图片)
 error_img:
   flink: /img/friend_404.gif
@@ -191,8 +192,8 @@ post_meta:
 
 # 主色调相关配置
 mainTone:
-  enable: false # true or false 文章是否启用获取图片主色调
-  mode: api # colorthief/cdn/api/both colorthief模式为前端获取图片主色调，cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取，可以在文章内配置main_color: '#3e5658'，使用十六进制颜色，则不会请求colorthief/cdn/api/both获取主色调，而是直接使用配置的颜色
+  enable: true # true or false 文章是否启用获取图片主色调
+  mode: colorthief # colorthief/cdn/api/both colorthief模式为前端获取图片主色调，cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取，可以在文章内配置main_color: '#3e5658'，使用十六进制颜色，则不会请求colorthief/cdn/api/both获取主色调，而是直接使用配置的颜色
   # 项目地址：https://github.com/anzhiyu-c/img2color-go
   api: https://img2color-go.vercel.app/api?img= # mode为api时可填写
   cover_change: true # 整篇文章跟随cover修改主色调
@@ -243,6 +244,7 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: true
+  coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
     - img: https://cdn.pichub.app/img/images/af/34/af34316a7c5620b41c0aa0b638733653d7e9bdb1.webp
       link:
@@ -425,8 +427,8 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2020
-  custom_text:
+    since: 2026
+  custom_text: 
   runtime:
     enable: false
     launch_time: 04/01/2021 00:00:00 # 网站上线时间
@@ -810,7 +812,7 @@ aside:
     name_link: /
 
   card_announcement:
-    enable: false
+    enable: true
     content: 欢迎来看我的博客鸭~
   card_weixin:
     enable: true
@@ -847,18 +849,19 @@ aside:
     last_push_date: false
     sort_order: # Don't modify the setting unless you know how it works
 
+
 # busuanzi count for PV / UV in site
 # 访问人数
 busuanzi:
-  site_uv: false
-  site_pv: false
-  page_pv: false
+  site_uv: true
+  site_pv: true
+  page_pv: true
 
 # Time difference between publish date and now (网页运行时间)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 4/1/2021 00:00:00
+  publish_date: 02/26/2026 00:00:00
 
 # Console - Newest Comments
 newest_comments:
