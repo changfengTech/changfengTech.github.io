@@ -11,7 +11,6 @@ menu:
 
   我的:
     音乐馆: /music/ || anzhiyu-icon-music
-    追番页: /bangumis/ || anzhiyu-icon-bilibili
     相册集: /album/ || anzhiyu-icon-images
     小空调: /air-conditioner/ || anzhiyu-icon-fan
 
@@ -50,7 +49,7 @@ highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / 
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: true # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: 330 # unit: px
+highlight_height_limit: 330 # unit: pxz
 code_word_wrap: false
 
 # copy settings
@@ -66,21 +65,21 @@ copy:
 # formal:
 #   name: link || icon
 social:
-  # Github: https://github.com/anzhiyu-c || anzhiyu-icon-github
-  # BiliBili: https://space.bilibili.com/372204786 || anzhiyu-icon-bilibili
+  Github: https://github.com/changfengTech || anzhiyu-icon-github
+  BiliBili: https://space.bilibili.com/1864275209 || anzhiyu-icon-bilibili
 
 # 作者卡片 状态
 author_status:
-  enable: false
+  enable: true
   # 可以是任何图片，建议放表情包或者emoji图片，效果都很好，[表情包速查](https://emotion.xiaokang.me/)
   statusImg: "https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png"
   skills:
-    # - 🤖️ 数码科技爱好者
-    # - 🔍 分享与热心帮助
+    - 🤖️ 数码科技爱好者
+    - 🔍 分享与热心帮助
     # - 🏠 智能家居小能手
-    # - 🔨 设计开发一条龙
+    - 🔨 设计开发一条龙
     # - 🤝 专修交互与设计
-    # - 🏃 脚踏实地行动派
+    - 🏃 脚踏实地行动派
     # - 🧱 团队小组发动机
     # - 💢 壮汉人狠话不多
 
@@ -135,12 +134,12 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /favicon.ico
+favicon: https://cdn.pichub.app/img/images/7d/ba/7dbaff7cc1fb04915ddb54433aa6338ee8b861e8.webp
 
 # Avatar (头像)
 avatar:
-  img: https://bu.dusays.com/2023/04/27/64496e511b09c.jpg
-  effect: false
+  img: https://cdn.pichub.app/img/images/7d/ba/7dbaff7cc1fb04915ddb54433aa6338ee8b861e8.webp
+  effect: true
 
 # Disable all banner image
 disable_top_img: false
@@ -199,7 +198,7 @@ mainTone:
 
 # wordcount (字数统计)
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -232,7 +231,7 @@ post_copyright:
   enable: true
   decode: false
   author_href:
-  location: 长沙
+  location: 杭州
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
   avatarSinks: false # hover时头像下沉
@@ -244,10 +243,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
+    - img: https://cdn.pichub.app/img/images/af/34/af34316a7c5620b41c0aa0b638733653d7e9bdb1.webp
       link:
       text: 微信
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png
+    - img: https://cdn.pichub.app/img/images/91/b8/91b8f6c426f48f145e7e32ce5c3104ee2f084e81.webp
       link:
       text: 支付宝
 
