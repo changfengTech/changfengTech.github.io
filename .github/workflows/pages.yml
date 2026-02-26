@@ -110,3 +110,14 @@ jobs:
         id: deployment
         # 使用 GitHub 官方的部署 action，将之前上传的产物部署到 GitHub Pages
         uses: actions/deploy-pages@v4
+
+      # 步骤 2: 清理 Cloudflare 缓存
+      - name: Purge Cloudflare Cache
+        # 部署成功后自动清理 Cloudflare 缓存
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}'
+        # 即使清理失败也继续（不中断工作流）
+        continue-on-error: true
