@@ -160,10 +160,7 @@ cover:
   # left/right/both
   position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
-  default_cover:
-    - https://cdn.pichub.app/img/images/46/06/4606dd8de98f693ae93881bb74985597540271f3.webp
-    - https://cdn.pichub.app/img/images/71/32/71326b61cade3d2664853b5c8eb47c8b358e2015.webp
-    - https://cdn.pichub.app/img/images/a1/fe/a1fe9d880406551a6c1ffa42d9029ef63900669d.webp
+  default_cover: https://cdn.pichub.app/img/images/90/b3/90b380c23e7be6965e3c6b5a2a6e9536c1c09278.png
 # Replace Broken Images (替换无法显示的图片)
 error_img:
   flink: /img/friend_404.gif
@@ -428,7 +425,7 @@ footer:
   owner:
     enable: true
     since: 2026
-  custom_text: 
+  custom_text:
   runtime:
     enable: false
     launch_time: 04/01/2021 00:00:00 # 网站上线时间
@@ -848,7 +845,6 @@ aside:
     post_count: true
     last_push_date: false
     sort_order: # Don't modify the setting unless you know how it works
-
 
 # busuanzi count for PV / UV in site
 # 访问人数
