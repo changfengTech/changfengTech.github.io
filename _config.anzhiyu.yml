@@ -67,6 +67,7 @@ copy:
 social:
   Github: https://github.com/changfengTech || anzhiyu-icon-github
   BiliBili: https://space.bilibili.com/1864275209 || anzhiyu-icon-bilibili
+  WeiBo: https://weibo.com/u/7767196062 || anzhiyu-icon-weibo
 
 # 作者卡片 状态
 author_status:
@@ -139,7 +140,7 @@ favicon: https://cdn.pichub.app/img/images/7d/ba/7dbaff7cc1fb04915ddb54433aa6338
 # Avatar (头像)
 avatar:
   img: https://cdn.pichub.app/img/images/7d/ba/7dbaff7cc1fb04915ddb54433aa6338ee8b861e8.webp
-  effect: true
+  effect: false
 
 # Disable all banner image
 disable_top_img: false
@@ -148,7 +149,7 @@ disable_top_img: false
 index_img: false # "background: url() top / cover no-repeat"
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: false
+default_top_img: true
 
 cover:
   # display the cover or not (是否显示文章封面)
@@ -234,7 +235,7 @@ post_copyright:
   location: 杭州
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
-  avatarSinks: false # hover时头像下沉
+  avatarSinks: true # hover时头像下沉
   copyright_author_img_back:
   copyright_author_img_front:
   copyright_author_link: /
