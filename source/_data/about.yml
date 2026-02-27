@@ -36,8 +36,10 @@
       - desc: Tencent, 腾讯文档-前端开发实习
         color: "#024fd2"
       - desc: JD, 京东零售智能客服-前端开发实习
-        color: "#ef0002"
-    img: https://bu.dusays.com/2023/04/21/644287166329b.png
+        color: "#8ce78c"
+      - desc: Xhs, 小红书内容电商-前端开发实习
+        color: "#f82441" 
+    img: https://cdn.pichub.app/img/images/ba/3d/ba3db66852930771b8afadadf04cf94fb32fae52.webp
   statistic:
     link: /archives
     text: 文章隧道
