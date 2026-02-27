@@ -426,7 +426,7 @@ footer:
   custom_text:
   runtime:
     enable: false
-    launch_time: 04/01/2021 00:00:00 # 网站上线时间
+    launch_time: 02/26/2026 00:00:00 # 网站上线时间
     work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
     work_description: 距离月入25k也就还差一个大佬带我~
     offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
@@ -445,38 +445,38 @@ footer:
       # - link: https://www.dogecloud.com/
       #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
       #   message: 本站使用多吉云为静态资源提供CDN加速
-      # - link: https://github.com/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
-      #   message: 本站项目由Github托管
+      - link: https://github.com/
+        shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
+        message: 本站项目由Github托管
       # - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
       #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
       #   message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
   socialBar:
-    enable: false
+    enable: true
     centerImg:
     left:
-      # - title: email
-      #   link: mailto:anzhiyu-c@qq.com
-      #   icon: anzhiyu-icon-envelope
-      # - title: 微博
-      #   link: https://weibo.com/u/6378063631
-      #   icon: anzhiyu-icon-weibo
-      # - title: facebook
-      #   link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
-      #   icon: anzhiyu-icon-facebook1
+      - title: email
+        link: mailto:majialu0220@gmail.com
+        icon: anzhiyu-icon-envelope
+      - title: 掘金
+        link: https://juejin.cn/user/4352291017589051
+        icon: icon-juejin
+      - title: Github
+        link: https://github.com/changfengTech
+        icon: anzhiyu-icon-github
       # - title: RSS
       #   link: atom.xml
       #   icon: anzhiyu-icon-rss
     right:
-      # - title: Github
-      #   link: https://github.com/anzhiyu-c
-      #   icon: anzhiyu-icon-github
-      # - title: Bilibili
-      #   link: https://space.bilibili.com/372204786
-      #   icon: anzhiyu-icon-bilibili
-      # - title: 抖音
-      #   link: https://v.douyin.com/DwCpMEy/
-      #   icon: anzhiyu-icon-tiktok
+      - title: Bilibili
+        link: https://space.bilibili.com/1864275209?spm_id_from=333.1007.0.0
+        icon: anzhiyu-icon-bilibili
+      - title: 抖音
+        link: https://www.douyin.com/user/MS4wLjABAAAA-pdOU0kpqExyAoSsuW0EwCe-F7VK0D3PXkBto99VmMEwI0wZq5W4CtaPXW0563Gr
+        icon: anzhiyu-icon-tiktok
+      - title: 小红书
+        link: https://www.xiaohongshu.com/user/profile/61541c240000000002025122?xsec_token=YBcRwZLoAx564anq_Zv0rws3TiCV7XMhmMQLFbm9rXwnc%3D&xsec_source=app_share&shareRedId=ODc3NDRINj02NzUyOTgwNjY1OTk5Njg7&apptime=1772164659&share_id=7a90a988791f445fa211ea08af3ffb6c&share_channel=copy_link&appuid=61541c240000000002025122&xhsshare=CopyLink
+        icon: anzhiyu-icon-book
       # - title: CC
       #   link: /copyright
       #   icon: anzhiyu-icon-copyright-line
@@ -522,13 +522,13 @@ footer:
     cc:
       enable: false
       link: /copyright
-    linkList:
-      - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
-        text: 主题
-      # - link: https://image.anheyu.com
-      #   text: 图床
-      # - link: https://beian.miit.gov.cn/
-      #   text: 湘ICP备-xxxxxxx号
+    # linkList:
+    #   - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+    #     text: 主题
+    # - link: https://image.anheyu.com
+    #   text: 图床
+    # - link: https://beian.miit.gov.cn/
+    #   text: 湘ICP备-xxxxxxx号
     subTitle:
       enable: false
       # Typewriter Effect (打字效果)
@@ -970,7 +970,7 @@ note:
   light_bg_offset: 0
 
 icons:
-  ali_iconfont_js: # 阿里图标symbol 引用链接，主题会进行加载 symbol 引用
+  ali_iconfont_js: //at.alicdn.com/t/c/font_5130147_i4flvlk41dr.js
   fontawesome: false #是否启用fontawesome6图标
   fontawesome_animation_css: #fontawesome_animation 如果有就会加载，示例值：https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/font-awesome-animation.min.css
 
@@ -1054,8 +1054,8 @@ home_top:
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
-    - name: 大学
-      path: /categories/大学生涯/
+    - name: AI
+      path: /categories/人工智能/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: anzhiyu-icon-fire
@@ -1093,7 +1093,7 @@ bubble:
 
 #  控制台打印信息
 console:
-  enable: true
+  enable: false
 
 # 51a统计配置
 LA:
