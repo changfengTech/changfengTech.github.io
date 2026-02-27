@@ -66,8 +66,6 @@ copy:
 #   name: link || icon
 social:
   Github: https://github.com/changfengTech || anzhiyu-icon-github
-  BiliBili: https://space.bilibili.com/1864275209 || anzhiyu-icon-bilibili
-  WeiBo: https://weibo.com/u/7767196062 || anzhiyu-icon-weibo
 
 # 作者卡片 状态
 author_status:
@@ -800,7 +798,7 @@ aside:
   mobile: true # display on mobile
   position: right # left or right
   display: # 控制对应详情页面是否显示侧边栏
-    archive: true
+    archive: false
     tag: true
     category: true
   card_author:
