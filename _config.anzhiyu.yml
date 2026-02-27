@@ -635,7 +635,7 @@ sidebar:
   menus_items: true
   tags_cloud: true
   display_mode: true
-  nav_menu_project: true
+  nav_menu_project: false
 
 # 文章h2添加分隔线
 h2Divider: false
