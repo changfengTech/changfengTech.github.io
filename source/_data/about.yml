@@ -59,7 +59,7 @@
   personalities:
     author_name: 指挥官
     personality_type: ENTJ-A
-    photo_url: https://bu.dusays.com/2023/07/05/64a4c63495ac5.jpg
+    photo_url: https://cdn.pichub.app/img/images/87/cc/87cc0cb63265dec85c6f35a715a9b111f08524a0.webp
     personality_img: https://cdn.pichub.app/img/images/4f/96/4f9698932daede6408be9a3a75140c71f2acaa48.png
     name_url: https://www.16personalities.com/ch/entj-%E4%BA%BA%E6%A0%BC
   maxim:
@@ -79,24 +79,24 @@
     game_title: 塞尔达传说
     game_bg: https://cdn.pichub.app/img/images/1a/39/1a39ea275d269bb31fb7e0a222706ffd138a002f.webp
   comic:
-    comic_tips: 爱好番剧
-    comic_title: 追番
+    comic_tips: 技术动态
+    comic_title: 最近在研究
     comic_list:
-      - name: 约定的梦幻岛
-        href: https://www.bilibili.com/bangumi/media/md5267750/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/27/647166c44b414.webp
-      - name: 咒术回战
-        href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/24/646db4398832e.webp
-      - name: 紫罗兰永恒花园
-        href: https://www.bilibili.com/bangumi/media/md8892/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/24/646db43983d99.webp
-      - name: 鬼灭之刃
-        href: https://www.bilibili.com/bangumi/media/md22718131/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/24/646db439856a0.webp
-      - name: JOJO的奇妙冒险 黄金之风
-        href: https://www.bilibili.com/bangumi/media/md135652/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/30/64760e38d651a.webp
+      - name: Agent Skills
+        href: https://agentskills.io/home
+        cover: https://cdn.pichub.app/img/images/5c/e8/5ce8b86941566bc0d3773d9b96e2cc4c1dd4e289.webp
+      - name: Ollama-本地部署小模型
+        href: https://ollama.com/
+        cover: https://cdn.pichub.app/img/images/48/9e/489e812b8b0020c4e1ba0383189c3e657cad5fef.webp
+      - name: LangChain-Agent流程编排框架
+        href: https://www.langchain.com/
+        cover: https://cdn.pichub.app/img/images/eb/43/eb43b205c99d479472a173d0b346fdf34764b651.webp
+      - name: MCP-模型上下文协议
+        href: https://modelcontextprotocol.io/docs/getting-started/intro
+        cover: https://cdn.pichub.app/img/images/ad/cc/adcc5abef297cd75649a152b48e0b16c9fd0b424.webp
+      - name: Next.js-React框架
+        href: https://nextjs.org/
+        cover: https://cdn.pichub.app/img/images/eb/c3/ebc32cb8edd2ee2230b38a7309f12c4a5001d184.webp
   like:
     like_tips: 关注偏好
     like_title: 数码科技
