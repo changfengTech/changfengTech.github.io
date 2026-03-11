@@ -6,7 +6,7 @@ categories:
 cover:
 date: {{ date }}
 description:
-key:
+keywords:
 tags:
 top_img:
 ---
