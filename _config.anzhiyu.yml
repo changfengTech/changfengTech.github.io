@@ -382,7 +382,7 @@ giscus:
     dark: dark
   option: # options
     data-lang: zh-CN
-    data-mapping:
+    data-mapping: pathname
     data-category: Announcements
     data-input-position: top
 
