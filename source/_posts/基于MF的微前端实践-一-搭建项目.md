@@ -12,6 +12,7 @@ keywords:
   - 架构
 tags: 微前端
 top_img: https://pic.changfeng.online/blog/202603/5a2863b85b51a0d367e7a8560687b0f3.vscode_picgo_1773236234123.png
+ai: true
 ---
 
 # 引言
