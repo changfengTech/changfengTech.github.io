@@ -112,7 +112,7 @@ pnpm create module-federation@latest
 
 ![image-20260312115909164](https://pic.changfeng.online/blog/202603/fa5d466fc10c5ea07b69b06b937517bc.image-20260312115909164.png)
 
-> 这个名称是我们给远程模块命名的**本地别名***，可以任意自定义，不一定非得是`provider`，但是在`module-federation.config.ts`中的`remote`对象中配置的字段名要和在`App.tsx`中导入的包名一致。
+> 这个名称是给远程模块命名的**本地别名**，可以任意自定义，不一定非得是`provider`，但是在`module-federation.config.ts`中的`remote`对象中配置的字段名要和在`App.tsx`中导入的包名一致。
 
 这里提到了两个概念`生产者`和`消费者`。
 
