@@ -1,8 +1,6 @@
 ---
 title: '基于MF的微前端实践（一）: 搭建项目'
-categories:
-  - 技术
-  - 前端
+categories: 前端
 date: 2026-03-11 21:31:20
 cover: https://pic.changfeng.online/blog/202603/26d81ddb9ea417cb6605705fef0f026b.vscode_picgo_1773236152581.png
 description: 本文章属于微前端专栏，介绍基于MF的微前端实践。
@@ -163,7 +161,7 @@ FEDERATION_DEBUG=true pnpm build
 运行时添加环境变量，则直接在控制台执行以下代码即可：
 
 ```js
-localStorage.setItem('FEDERATION_DEBUG', 'true')
+localStorage.setItem('FEDERATION_DEBUG', 'true');
 ```
 
 可以进行相关测试，未开启调试模式时，启动应用，`terminal`输出如下：
