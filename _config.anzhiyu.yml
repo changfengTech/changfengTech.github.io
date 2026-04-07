@@ -1053,12 +1053,12 @@ home_top:
   siteText: blog.changfeng.online
   category:
     - name: 前端
-      path: /categories/前端开发/
+      path: /categories/前端/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
     - name: AI
-      path: /categories/人工智能/
+      path: /categories/AI/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: anzhiyu-icon-fire
