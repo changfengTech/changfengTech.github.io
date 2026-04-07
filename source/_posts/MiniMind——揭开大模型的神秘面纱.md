@@ -67,3 +67,16 @@ python eval_llm.py --load_from jingyaogong/MiniMind2
 选择 `0` 进行自动测试，就会测试代码里面的 `prompts` 示例。
 
 ![image](https://pic.changfeng.online/blog/202603/6079d4fa94c3e2fb63531cdc776bd055.vscode_picgo_1773482640242.png)
+
+# 训练过程
+
+## Tokenizer
+
+## Pretrain
+
+## SFT
+
+## RLHF
+
+## Reason
+
